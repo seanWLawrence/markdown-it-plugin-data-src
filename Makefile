@@ -17,6 +17,9 @@ ci:
 	jest
 	make build
 
+publish:
+	semantic-release
+
 view-docs:
 	rm -rf docs
 	npx jsdoc src -d ./docs -R README.md -P package.json  -c jsdoc.config.json

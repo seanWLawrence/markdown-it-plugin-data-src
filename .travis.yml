@@ -15,7 +15,9 @@ jobs:
     script: jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
       && rm -rf ./coverage
 script:
-- npm run build
+- npm run ci 
+after_success:
+- npm run publish
 branches:
   except:
   - "/^v\\d+\\.\\d+\\.\\d+$/"
