@@ -7,6 +7,7 @@
  * @param {MarkdownIt} md - MarkdownIt instance
  * @returns {undefined} - Side effects only
  * @author Sean W. Lawrence
+ * @version 1.0.0
  * @license MIT
  */
 function dataSrc(md: *) {
