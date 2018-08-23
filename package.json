@@ -1,7 +1,15 @@
 {
-  "name": "node-open-source-starter",
+  "name": "markdown-it-plugin-data-src",
   "version": "1.0.0",
-  "description": "A ES6-ready, pre-configured open source starter for Node open source projects",
+  "description": "Replaces <image> 'src' attributes with 'data-src' for use with Lozad.js to lazy-load all images by default.",
+  "homepage": "https://github.com/seanwlawrence/markdown-it-plugin-data-src#readme",
+  "bugs": {
+    "url": "https://github.com/seanwlawrence/markdown-it-plugin-data-src/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seanwlawrence/markdown-it-plugin-data-src.git"
+  },
   "main": "lib/index.js",
   "scripts": {
     "test": "make test",
@@ -10,17 +18,18 @@
     "build": "make build",
     "commit": "make commit",
     "ci": "make ci",
-    "create-docs": "make create-docs"
+    "view-docs": "make view-docs"
   },
   "keywords": [
-    "node",
-    "open source",
-    "starter"
+    "markdown",
+    "markdown-it",
+    "markdown-it-plugin",
+    "lozad",
+    "lazy loading"
   ],
-  "author": "Sean W. Lawrence",
+  "author": "Sean W. Lawrence (https://swl.netlify.com)",
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.0.0-rc.1",
     "@babel/core": "^7.0.0-rc.2",
@@ -34,6 +43,8 @@
     "eslint-plugin-jest": "^21.21.0",
     "flow-bin": "^0.79.1",
     "jest": "^23.5.0",
+    "jsdoc-babel": "^0.4.0",
+    "markdown-it": "^8.4.2",
     "prettier": "^1.14.2",
     "prettier-eslint": "^8.8.2",
     "prettier-eslint-cli": "^4.7.1"
