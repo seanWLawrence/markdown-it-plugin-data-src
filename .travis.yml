@@ -16,8 +16,6 @@ jobs:
       && rm -rf ./coverage
 script:
 - npm run build
-after_success:
-- npx semantic-release
 branches:
   except:
   - "/^v\\d+\\.\\d+\\.\\d+$/"
