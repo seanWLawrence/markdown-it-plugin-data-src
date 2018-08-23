@@ -61,7 +61,6 @@ Then simply [install Lozad.js](https://github.com/ApoorvSaxena/lozad.js) as you 
 ```javascript
 import lozad from 'lozad'
 
-
 // Get all image tags and run Lozad lazy loading on them
 const images = document.querySelectorAll('img')
 const observer = lozad(images);
