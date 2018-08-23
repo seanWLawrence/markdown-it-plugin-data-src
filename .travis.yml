@@ -1,0 +1,31 @@
+language: node_js
+node_js:
+- node
+- lts/*
+cache:
+  directories:
+  - "~/.npm"
+notifications:
+  email: false
+install: npm i
+jobs:
+  include:
+  - stage: Produce Coverage
+    node_js: node
+    script: jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
+      && rm -rf ./coverage
+script:
+- npm run build
+after_success:
+- npx semantic-release
+branches:
+  except:
+  - "/^v\\d+\\.\\d+\\.\\d+$/"
+deploy:
+  provider: npm
+  email: sean.w.lawrence@gmail.com
+  api_key:
+    secure: 0BzGKWLbgP7vwKu/By4M756WiPc4Fcwoc5S9vBb3mtQ8AnZ8z+gQMT7vJJ/l30J2j7VZvvBEYNW1O3F/fehqwYgTeFGAR/43ZkP7XcqdLCjyuQZPUY7S7azMwihqRAhVucEthJr0QKjFh1XRbZm4TAz0+S3PhwKRRrT8RlSXbME7XhpucRdyA2kjHoOZhxFZ0rEHUjyOaPFPve+3dEd3O+R6anmfFQHVcqoZ6A9lHawZTJNhxgVSL/xFHG0wrpPTNrNGJgDC2qOinl1EYQpaok5CRqnzaA/4nbiAGafAlr4cRqp0wvZehfpTgziR2KAFdlnbBeFg5jfLEMeAD32gOWvdit/9Zh8rRuFI8fEfI6VxboBXycu6ti8Rym82cOfXdqPV5xGJmlyYqslTOb8Bt9xFOG5CgMaZqpe/ep12k04r+rlQCotxGUZ2WVhoUjKcRrV32JwcqUf/ROEpsIXFOK+u5qS/ogPH/3J1O/RgOmorX5tYEDyQTrN1Nr7qkqQVJKlvJeGl1frhoLb3ZyOLen3koFfX5jeja6QVYylgl+QhNPt+m9VuOYszB8lYaOOez9CAxCYeDIbBlcLGmmew0wYlI2F0TRftjTugNYdnqxWvN9YNBlOfbgKRXrpgIvYN8GmAoJ1ISvCNZ6yMqusjJJ1WWRGDuhADHMS9cTaJlp4=
+  on:
+    tags: true
+    repo: seanWLawrence/markdown-it-plugin-data-src
