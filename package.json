@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-plugin-data-src",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Replaces <image> 'src' attributes with 'data-src' for use with Lozad.js to lazy-load all images by default.",
   "homepage": "https://github.com/seanwlawrence/markdown-it-plugin-data-src#readme",
   "bugs": {
@@ -18,7 +18,8 @@
     "build": "make build",
     "commit": "make commit",
     "ci": "make ci",
-    "view-docs": "make view-docs"
+    "view-docs": "make view-docs",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "markdown",
@@ -47,7 +48,8 @@
     "markdown-it": "^8.4.2",
     "prettier": "^1.14.2",
     "prettier-eslint": "^8.8.2",
-    "prettier-eslint-cli": "^4.7.1"
+    "prettier-eslint-cli": "^4.7.1",
+    "semantic-release": "^15.9.9"
   },
   "config": {
     "commitizen": {
