@@ -72,4 +72,4 @@ observer.observe();
 
 MIT
 
-Copyright 2018 Sean W. Lawrence - [visit my portfolio](https://swl.netlify.com).
+Copyright 2018 Sean W. Lawrence - [visit my portfolio](https://swl.netlify.com)
