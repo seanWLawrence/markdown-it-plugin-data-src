@@ -53,7 +53,7 @@ A lazy-loading library. This library will prep your images for use with Lozad.js
 
 ```javascript
 const md = require('markdown-it')()
-  .use(require('markdown-it-plugin-data-src'))
+  .use(require('markdown-it-plugin-data-src').default)
 ```
 
 ### ES6 Module plugin example
