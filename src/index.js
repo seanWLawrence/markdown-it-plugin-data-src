@@ -9,8 +9,9 @@
  * @author Sean W. Lawrence
  * @version 1.0.0
  * @license MIT
+ * @exports dataSrc
  */
-function dataSrc(md: *) {
+module.exports = function dataSrc(md: *) {
   /**
    * Remember old renderer, if overriden, or proxy to default renderer.
    * @param {Array<MarkdownItToken>} tokens - elements in Markdown that MarkdownIt will parse into HTML
@@ -73,9 +74,4 @@ function dataSrc(md: *) {
      */
     return defaultRender(tokens, idx, options, env, self);
   };
-}
-
-/**
- * @exports dataSrc
- */
-export default dataSrc;
+};

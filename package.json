@@ -14,7 +14,6 @@
   "scripts": {
     "test": "make test",
     "lint": "make lint",
-    "develop": "make develop",
     "build": "make build",
     "commit": "make commit",
     "ci": "make ci",
