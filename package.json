@@ -18,7 +18,9 @@
     "commit": "make commit",
     "ci": "make ci",
     "publish": "make publish",
-    "view-docs": "make view-docs"
+    "view-docs": "make view-docs",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "markdown",
@@ -29,7 +31,9 @@
   ],
   "author": "Sean W. Lawrence (https://swl.netlify.com)",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "semantic-release": "^15.9.11"
+  },
   "devDependencies": {
     "@babel/cli": "^7.0.0-rc.1",
     "@babel/core": "^7.0.0-rc.2",
@@ -49,8 +53,8 @@
     "prettier": "^1.14.2",
     "prettier-eslint": "^8.8.2",
     "prettier-eslint-cli": "^4.7.1",
-    "semantic-release": "^15.9.9",
-    "travis-deploy-once": "^5.0.2"
+    "travis-deploy-once": "^5.0.4",
+    "semantic-release": "^15.9.11"
   },
   "config": {
     "commitizen": {

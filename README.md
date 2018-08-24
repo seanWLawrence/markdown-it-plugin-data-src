@@ -12,7 +12,6 @@
 ![npm bundle size (minified + gzip)](https://img.shields.io/bundlephobia/minzip/markdown-it-plugin-data-src.svg?style=flat-square)
 [![GitHub](https://img.shields.io/github/license/seanwlawrence/markdown-it-plugin-data-src.svg?style=flat-square)](https://github.com/seanWLawrence/markdown-it-plugin-data-src/blob/master/LICENSE.md)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-blue.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
 
 ## The problem
@@ -53,7 +52,7 @@ A lazy-loading library. This library will prep your images for use with Lozad.js
 
 ```javascript
 const md = require('markdown-it')()
-  .use(require('markdown-it-plugin-data-src').default)
+  .use(require('markdown-it-plugin-data-src'))
 ```
 
 ### ES6 Module plugin example

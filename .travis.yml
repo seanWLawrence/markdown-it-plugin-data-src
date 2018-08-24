@@ -26,6 +26,3 @@ deploy:
   email: sean.w.lawrence@gmail.com
   api_key:
     secure: P5zO51326lT+czXnKlChKeawtwXa+kmMy1idKf/7Vk+NlHkaMsw2dXHi0Bh7aSRsYYFC2OCiWjmXewvyLTNRVmLSaLieJvnYY6O7xHG+dyvzeMjxmqrRZ0lDjhvli0SeON8lz7v/uKaw7qhnoz3f4q21Y2GC56PCrXRU8c7zR4NNJ/4qbS4NnYfr9cmlumaFtIj/JscU4446+RXEHSM+4xd9qJCwwSZWpg9h2SIfm5Lme4lNGHpBObv16LS+8KKpKkHgTjKMc6JJJjKwlJefx0bF3akPn2djPLptdtdZoWCNz0f5xbjjjQQthQIy+z4Cnifr/gCOzlT/bukGyMI34xpEb+hJ3wYZFQfwXbDJWAtfS+/g+dFKfFrFU4sDH9c3PDYOAAorMCbFrTV82iWwbc5c4P8UCDlm91W+sKxXUEfDxT74yx2q0KmFJzGBWV/WazPINYct2HTjRpXYmLYTo4KEQqSFiG7/UkVLpSwZYvor69OJXG0MCsI4mvhElpDglKGaCK645tIJEXdcAHgWkpQDP9empNu5kgWOr5kUbziLvUTEyVxA01GMHvQtdc/hbjQkCPGIhwmZHamIipSh9ooGBZ1wlw7nPQNNm7RxPEabz828ukI/nm3wtL4ButzxXCFRxG0M0A5A+5XITo65AoXY1Z+rfAIQwOql+Mb2HnA=
-  on:
-    tags: true
-    repo: seanWLawrence/markdown-it-plugin-data-src
